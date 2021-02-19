@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html>
+    
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="some js code">
+	<meta name="keywords" content="js">
+	<title>Strona zamówienia</title>
+	<meta dane="author" content="Żaneta Bortnik" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">	
+	<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body>
+
+	<body onload="timeCount();"> 
+	<div class="container">
+	
+		<header>
+			<h1>Some js code</h1>	
+		</header>
+
+		<section class="clock-clock">
+			<h2>What time is it?</h2>
+			<div id="clock"></div>
+		</section>
+
+		<section class = positive-number>
+			<h2>Put a number. It's positive or negative?</h2>
+			<input type="text" id="numberPositive"/> 
+			<input type="submit" value="sprawdź" onclick = "isPositiveNumber()"/>
+			<div id="result"></div>
+		</section>
+		
+		<section class = between-number>
+			<h2>I can count. Pleaase, enter numbers.</h2>
+			<input type="text" id="number1" />
+			<input type="text" id="number2" />
+			<input type="submit" value="sprawdz" onclick="numberBetween()" />
+			<div id="result2"></div>
+		</section>
+	</div>
+</body>
+</html>
